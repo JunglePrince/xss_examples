@@ -1,7 +1,7 @@
 # Cross Site Scripting Examples
 Site contains purposely vulnerable code. Don't host this online.
 ## Requirements
-Must have node and npm installed.
+Must have [node](http://nodejs.org) and npm (comes with node) installed.
 ## Install Dependencies
 In the root directory of the project run ```npm install```.
 ## Start the server
