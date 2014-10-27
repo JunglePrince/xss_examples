@@ -1,5 +1,5 @@
 # Cross Site Scripting Examples
-Site contains purposely vulnerable code. Don't host this online.
+This project purposely contains vulnerable code. Don't host this online.
 ## Requirements
 Must have [node](http://nodejs.org) and npm (comes with node) installed.
 ## Install Dependencies
