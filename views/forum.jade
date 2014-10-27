@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  h2 Forum Page
+  form(role='form' action='forum' method="post")
+    div.form-group
+      label(for='input-comment') Please enter your comment here:
+      textarea#input-comment.form-control(rows='5' name='comment')
+    button.btn.btn-primary(type='submit') Submit Comment
+  h3 Previous Comments
+  each comment, i in comments
+    div.panel.panel-info
+      div.panel-heading
+        h3.panel-title Comment #{i}
+      div.panel-body!= comment
