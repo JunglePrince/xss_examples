@@ -6,7 +6,8 @@ block content
   form.form-inline(role='form' action='search' method="get")
     div.form-group
       input#input-terms.form-control(type='text' name='terms')
-    button.btn.btn-primary(type='submit') Search
+    div.form-group
+      button.btn.btn-primary(type='submit') Search
   if terms
     h3 !{terms} results...
     for result in results
