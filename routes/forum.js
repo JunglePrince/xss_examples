@@ -6,9 +6,16 @@ var title = 'XSS Persistent Vulnerability';
 var commentFile = 'data/comments.txt';
 
 router.get('/', function(req, res) {
+  res.cookie('forum_cookie', 'personal_secrets');
+
+  // read from the text file
+  var comments = fs.readFileSync(commentFile).toString().split('\n');
+  // trim off last newline
+  comments.pop();
+
   res.render('forum', {
     title: title,
-    comments: fs.readFileSync(commentFile).toString().split('\n')
+    comments: comments
   });
 });
 
